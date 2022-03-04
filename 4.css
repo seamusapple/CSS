@@ -1,0 +1,123 @@
+/* unvisited link */
+a:link {
+  color: red;
+  text-decoration: none;
+  background-color: yellow;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+  text-decoration: none;
+  background-color: cyan;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+  text-decoration: underline;
+  background-color: lightgreen;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+  text-decoration: underline;
+  background-color: hotpink;
+}
+
+a.special:link, a.special:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.special:hover, a.special:active {
+  background-color: red;
+}
+
+ul.a {
+	list-style-type: circle;
+	list-style-position: outside;
+}
+
+ul.b {
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+ol.c {
+	list-style-type: upper-roman;
+}
+
+ol.d {
+	list-style-type: lower-alpha;
+}
+
+ul.e {
+	list-style-image: url(sqpurple.gif);
+}
+
+ul.f {
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	border-left: 5px solid red;
+}
+
+ol.g {
+	background: #ff9999;
+  	padding: 20px;
+}
+
+ul.h {
+	background: #3399ff;
+  	padding: 20px;
+}
+
+ol.g li {
+	background: #ffe5e5;
+  	padding: 5px;
+  	margin-left: 35px;
+}
+
+ul.h li {
+  	background: #cce5ff;
+  	margin: 5px;
+}
+
+table.t1, table.t1 th, table.t1 td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	height: 50px;
+	padding: 15px;
+}
+
+table.t1 tr:hover {
+	background-color: #F5F5F5;
+}
+
+table.t1 tr:nth-child(even) {
+	background-color: #F2F2F2;
+}
+
+table.t1 th {
+	background-color: #4CAF50;
+	color: white;
+}
+
+table.t1 {
+	width: 150%;
+	text-align: center;
+}
+
+div.table {
+	overflow-x: auto;
+}
+
+table.t1 caption {
+	caption-side: bottom;
+}

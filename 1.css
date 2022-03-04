@@ -1,0 +1,138 @@
+p {
+	text-align: center;
+	color: red;
+}
+
+#para1 {
+	text-align: center;
+	color: blue;
+}
+
+.centerBlack {
+	text-align: center;
+	color: black;
+}
+
+.normal {
+	text-align: center;
+	color: red;
+}
+
+p.normal {
+	text-align: center;
+	color: green;
+}
+
+p.center {
+	text-align: center;
+	color: red;
+}
+
+p.large {
+	font-size: 300%;
+}
+
+/** {
+	text-align: right;
+	color: green;
+}*/
+
+h3, h4 {
+	text-align: left;
+	color: pink;
+}
+
+html {
+	font-size: 20px;
+}
+
+[title] {
+	color: grey;
+}
+
+a[href] {
+	color: orange;
+}
+
+a[href="http://www.w3school.com.cn/about_us.asp"] {
+	color: purple;
+}
+
+p[class~="important"] {
+	color: grey;
+}
+
+h1 em {
+	color: green;
+}
+
+h1 > strong {
+	color: blue;
+}
+
+h1 + h2 {
+	margin-top: 500px;
+}
+
+p.dotted { border-style: dotted; }
+p.dashed { border-style: dashed; }
+p.solid { border-style: solid; }
+p.double { border-style: double; }
+p.groove { border-style: groove; }
+p.ridge { border-style: ridge; }
+p.inset { border-style: inset; }
+p.outset { border-style: outset; }
+p.none { border-style: none; }
+p.hidden { border-style: hidden; }
+p.mix { border-style: dotted dashed solid double; }
+p.one {
+	border-style: solid;
+	border-width: 5px 20px; /* 上、下边框 5 像素，左、右边框 20 像素 */
+	border-color: red;
+}
+p.two {
+	border-style: solid;
+	border-width: medium;
+	border-color: green;
+}
+p.three {
+	border-style: dotted;
+	border-width: 20px 5px; /* 上、下边框 20 像素，左、右边框 5 像素 */
+	border-color: blue;
+}
+p.four {
+	border-style: dotted;
+	border-width: 10px;
+	border-color: #ff0000 green blue yellow;
+}
+p.five {
+	border-style: double;
+	border-width: 25px 10px 4px 35px; /* 上 25 像素、右 10 像素、下 4 像素、左 35 像素 */
+}
+p.six {
+	border-style: double;
+	border-width: thick;
+}
+p.seven {
+	border-top-style: dotted;
+	border-right-style: solid;
+	border-bottom-style: dotted;
+	border-left-style: solid; 
+}
+p.eight {
+	width: 300px;
+	border-style: solid dotted;
+	margin: auto;
+}
+p.nine {
+	border: 2px solid orange;
+	border-radius: 5px;
+	margin: 25px 50px 75px 100px;
+}
+div {
+	border: 1px solid red;
+	margin-left: 100px;
+}
+p.ex1 {
+	margin-left: inherit;
+}

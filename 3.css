@@ -1,0 +1,67 @@
+div {
+	border: 1px solid black;
+	padding: 8px;
+}
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	background-color: none;
+	color: #4CAF50;
+	text-shadow: 2px 2px 5px red;
+}
+
+p {
+	text-indent: 50px;
+	text-align: justify;
+	letter-spacing: 3px;
+	text-decoration: underline;
+	font-family: "Times New Roman", Times, serif;
+	font-style: normal;
+	font-variant: small-caps;
+}
+
+a {
+	text-decoration: none;
+	background-color: none;
+	color: #008CBA;
+	text-transform: capitalize;
+}
+
+div.ex1 {
+	border: 1px solid black;
+	padding: 10px;
+	width: 200px;
+	height: 200px;
+	text-align: justify;
+	direction: rtl;
+	unicode-bidi: bidi-override;
+	text-decoration: overline;
+	line-height: 1.8;
+	word-spacing: -5px;
+	font-family: Arial, Helvatica, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 0.875em;
+}
+
+div.ex2 {
+	border: 1px solid black;
+	padding: 10px;
+	width: 200px;
+	height: 200px;
+	text-align: justify;
+	direction: ltr;
+	unicode-bidi: bidi-override;
+	text-decoration: line-through;
+	line-height: 0.8;
+	word-spacing: 10px;
+	font-family: "Lucida Console", "Courier New", monaspace;
+	font-style: oblique;
+	font-size: 1.5vw;
+}
+
+div.ex3 {
+	font-family: "Sofia";
+	font-size: 22px;
+}
