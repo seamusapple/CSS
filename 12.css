@@ -1,0 +1,90 @@
+#home {
+	width: 46px;
+	height: 44px;
+	background: url(navsprites.gif) 0 0;
+}
+
+#next {
+	width: 43px;
+	height: 44px;
+	background: url(navsprites.gif) -91px 0;
+}
+
+a[target=_blank] {
+	background-color: yellow;
+}
+
+input[type=text], select {
+	/*width: 130px;*/
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	outline: none;
+
+	background-color: white;
+	background-image: url('searchicon.png');
+	background-position: 10px 10px; 
+	background-repeat: no-repeat;
+	padding-left: 40px;
+
+	/*transition: width 0.4s ease-in-out;*/
+}
+
+input[type=submit] {
+	width: 100%;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #45A049;
+}
+
+input[type=text]:focus {
+	background-color: lightblue;
+	border: 3px solid #555;
+	/*width: 100%;*/
+}
+
+div {
+	border-radius: 5px;
+	background-color: #F2F2F2;
+	padding: 20px;
+}
+
+body {
+	counter-reset: section;
+}
+
+h1 {
+	counter-reset: subsection;
+}
+
+h1::before {
+	counter-increment: section;
+	content: "Section " counter(section) ". ";
+}
+
+h2::before {
+	counter-increment: subsection;
+	content: counter(section) "." counter(subsection) " ";
+}
+
+ol {
+	counter-reset: olsection;
+	list-style-type: none;
+}
+
+li::before {
+	counter-increment: olsection;
+	content: counters(olsection, ".") " ";
+}

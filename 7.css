@@ -1,0 +1,122 @@
+.center {
+	margin: auto;
+	width: 60%;
+	border: 3px solid #73AD21;
+	padding: 10px;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.positionright {
+	position: absolute;
+	right: 0;
+	width: 300px;
+	border: 3px solid #73AD21;
+	padding: 10px;
+}
+
+.floatright {
+	float: right;
+	width: 300px;
+	border: 3px solid #73AD21;
+	padding: 10px;
+}
+
+.verticalcenter {
+	padding: 70px 0;
+	border: 3px solid green;
+}
+
+.allcenter {
+	padding: 70px 0;
+	text-align: center;
+	border: 3px solid green;
+}
+
+.lineheightverticalcenter {
+	line-height: 200px;
+	height: 200px;
+	border: 3px solid green;
+	text-align: center;
+}
+
+.lineheightverticalcenter p {
+	line-height: 1.5;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.transformcenter {
+	height: 200px;
+	position: relative;
+	border: 3px solid green;
+}
+
+.transformcenter p {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.flexboxcenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+	border: 3px solid green;
+}
+
+h1:first-child {
+	color: blue;
+}
+
+p i:first-child {
+	color: blue;
+}
+
+p:first-child i {
+	color: green;
+}
+
+q:lang(en) {
+	quotes: "!" "~";
+}
+
+p::first-line {
+	color: #FF0000;
+	font-variant: small-caps;
+}
+
+p::first-letter {
+	color: #FF9999;
+	font-size: xx-large;
+}
+
+h1::before {
+	content: url(w3logo.png);
+}
+
+p::after {
+	content: url(w3logo.png);
+}
+
+::selection {
+	color: red;
+	background-color: yellow;
+}
+/*p {
+	display: none;
+	background-color: yellow;
+	padding: 20px;
+}
+
+div:hover p {
+	display: block;
+}*/

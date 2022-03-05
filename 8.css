@@ -1,0 +1,41 @@
+body {
+	margin: 0;
+}
+
+.firstul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 25%;
+	position: fixed;
+	background-color: #F1F1F1;
+	/*border: 1px solid #555;*/
+	overflow: auto;
+	height: 100%;
+}
+
+.firstli {
+	/*border-bottom: 1px solid #555;*/
+	text-align: center;
+}
+
+.firstli:last-child {
+	border-bottom: none;
+}
+
+.firsta, .firstaactive {
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+
+.firstaactive {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.firsta:hover:not(.active) {
+	background-color: #555;
+	color: white;
+}
