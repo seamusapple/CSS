@@ -3,7 +3,8 @@
 }
 
 body {
-	margin: 0
+	margin: 0;
+	color: white;
 }
 
 .header {
@@ -55,3 +56,226 @@ body {
 		width: 100%;
 	}
 }
+
+#rcorners1 {
+	border-radius: 50px / 15px;
+	background-color: #73AD21;
+	padding: 20px;
+	width: 200px;
+	height: 150px;
+}
+
+#rcorners2 {
+	border-radius: 15px / 50px;
+	background-color: #73AD21;
+	padding: 20px;
+	width: 200px;
+	height: 150px;
+}
+
+#rcorners3 {
+	border-radius: 50%;
+	background-color: #73AD21;
+	padding: 20px;
+	width: 200px;
+	height: 150px;
+}
+
+#borderimg {
+	border: 10px solid transparent;
+	padding: 15px;
+	border-image: url(border.png) 50 round;
+}
+
+#borderimg2 {
+	border: 10px solid transparent;
+	padding: 15px;
+	border-image: url(border.png) 30 stretch;	
+}
+
+#example1 {
+	background-image: url(flower.gif), url(paper.jpeg);
+	background-position: right bottom, left top;
+	background-repeat: no-repeat, repeat;
+	padding: 15px;
+}
+
+#example2 {
+	background: url(flower.gif) right bottom no-repeat, url(paper.jpeg) left top repeat;
+	padding: 15px;
+}
+
+#example3 {
+	border: 1px solid black;
+	background: url(flower.gif);
+	background-size: 100px 80px;
+	background-repeat: no-repeat;
+	padding: 15px;
+}
+
+#example4 {
+	border: 1px solid black;
+	background: url(flower.gif);
+	background-repeat: no-repeat;
+	padding: 15px;
+}
+
+.div1 {
+	border: 1px solid black;
+	height: 120px;
+	width: 150px;
+	background: url(flower.gif);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.div2 {
+	border: 1px solid black;
+	height: 120px;
+	width: 150px;
+	background: url(flower.gif);
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+.div3 {
+	border: 1px solid black;
+	height: 120px;
+	width: 150px;
+	background: url(flower.gif);
+	background-repeat: no-repeat;
+}
+
+html {
+	background: url(tiyugongyuan.jpeg) no-repeat center fixed;
+	background-size: cover;
+}
+
+#grad1 {
+	height: 200px;
+	background-color: red;
+	background-image: linear-gradient(red, yellow);
+}
+
+#grad2 {
+	height: 200px;
+	background-color: red;
+	background-image: linear-gradient(to right, red, yellow);
+}
+
+#grad3 {
+	height: 200px;
+	background-color: red;
+	background-image: linear-gradient(to right bottom, red, yellow);
+}
+
+#grad4 {
+  height: 100px;
+  background-color: red; /* 针对不支持渐变的浏览器 */
+  background-image: linear-gradient(0deg, red, yellow);
+}
+
+#grad5 {
+  height: 100px;
+  background-color: red; /* 针对不支持渐变的浏览器 */
+  background-image: linear-gradient(90deg, red, yellow);
+}
+
+#grad6 {
+  height: 100px;
+  background-color: red; /* 针对不支持渐变的浏览器 */
+  background-image: linear-gradient(180deg, red, yellow);
+}
+
+#grad7 {
+  height: 100px;
+  background-color: red; /* 针对不支持渐变的浏览器 */
+  background-image: linear-gradient(-90deg, red, yellow);
+}
+
+#grad8 {
+  height: 200px;
+  background-color: red; /* 针对不支持渐变的浏览器 */
+  background-image: linear-gradient(red, yellow, green);
+}
+
+#grad9 {
+  height: 200px;
+  background-color: red; /* 针对不支持渐变的浏览器 */
+  background-image: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+}
+
+#grad10 {
+  height: 200px;
+  background-color: red; /* 针对不支持渐变的浏览器 */
+  background-image: linear-gradient(red 10%, green 85%, blue 90%);
+}
+
+#grad11 {
+  height: 200px;
+  background-color: red; /* 针对不支持渐变的浏览器 */
+  background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+}
+
+#grad12 {
+  height: 200px;
+  background-color: red; /* 针对不支持渐变的浏览器 */
+  background-image: repeating-linear-gradient(45deg,red,yellow 7%,green 10%);
+}
+
+#grad13 {
+  height: 200px;
+  background-color: red; /* 针对不支持渐变的浏览器 */
+  background-image: repeating-linear-gradient(190deg,red,yellow 7%,green 10%);
+}
+
+#grad14 {
+  height: 200px;
+  background-color: red; /* 针对不支持渐变的浏览器 */
+  background-image: repeating-linear-gradient(90deg,red,yellow 7%,green 10%);
+}
+
+#grad15 {
+	height: 150px;
+	width: 200px;
+	background-color: red;
+	background-image: radial-gradient(circle, red 5%, yellow 15%, green 60%);
+}
+
+#grad16 {
+	height: 150px;
+	width: 150px;
+	background-color: red;
+	background-image: radial-gradient(closest-side at 60% 55%, red, yellow, black);
+}
+
+#grad17 {
+	height: 150px;
+	width: 150px;
+	background-color: red;
+	background-image: radial-gradient(farthest-side at 60% 55%, red, yellow, black);
+}
+
+#grad18 {
+	height: 150px;
+	width: 150px;
+	background-color: red;
+	background-image: radial-gradient(closest-corner at 60% 55%, red, yellow, black);
+}
+
+#grad19 {
+	height: 150px;
+	width: 150px;
+	background-color: red;
+	background-image: radial-gradient(farthest-corner at 60% 55%, red, yellow, black);
+}
+
+#grad20 {
+	height: 150px;
+	width: 150px;
+	background-color: red;
+	background-image: repeating-radial-gradient(red, yellow 10%, green 15%);	
+}
+
+
+

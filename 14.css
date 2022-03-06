@@ -1,0 +1,93 @@
+#shadow1 {
+	text-shadow: 2px 2px 5px red;
+	color: white;
+}
+
+#shadow2 {
+	text-shadow: 0 0 3px #FF0000;
+}
+
+#shadow3 {
+	text-shadow: 0 0 3px #FF0000, 0 0 25px #0000FF, 0 0 5px darkblue;
+}
+
+#shadow4 {
+	color: yellow;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#shadow5 {
+	width: 300px;
+	height: 100px;
+	padding: 15px;
+	background-color: yellow;
+	box-shadow: 10px 10px 5px grey;
+}
+
+div.card {
+	width: 250px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	text-align: center;
+}
+
+div.header {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px;
+	font-size: 40px;
+}
+
+div.container {
+	padding: 10px;
+}
+
+p.test1 {
+	white-space: nowrap;
+	width: 200px;
+	border: 1px solid #000000;
+	overflow: hidden;
+	text-overflow: clip;
+}
+
+p.test2 {
+	white-space: nowrap;
+	width: 200px;
+	border: 1px solid #000000;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+p.test1:hover {
+	overflow: visible;
+}
+
+p.test3 {
+	width: 11em;
+	border: 1px solid #000000;
+	word-wrap: break-word;
+}
+
+p.test4 {
+	width: 140px;
+	border: 1px solid #000000;
+	word-break: keep-all;
+}
+
+p.test5 {
+	width: 140px;
+	border: 1px solid #000000;
+	word-break: break-all;
+}
+
+p.test6 {
+	writing-mode: horizontal-tb;
+}
+
+span.test7 {
+	writing-mode: vertical-lr;
+}
+
+p.test7 {
+	writing-mode: vertical-rl;
+}
+

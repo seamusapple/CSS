@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="16.css">
+	<title>Animation</title>
+</head>
+<body>
+
+	<div class="animation1"></div>
+	<br />
+
+	<div class="animation2"></div>
+	<br />
+	<br /> 
+	<div class="tooltip">移到我上面
+	  <span class="tooltiptext">工具提示文本</span>
+	</div>
+	<br />
+	<br />
+	<br />
+
+	<h1>响应式宝丽来图像 / 卡片</h1>
+
+	<div class="polaroid">
+	  <img src="tulip-yellow.jpeg" alt="Tulip" style="width:100%">
+	  <div class="container">
+	  <p>黄色郁金香</p>
+	  </div>
+	</div>
+
+	<div class="polaroid">
+	  <img src="tulip-red.jpeg" alt="Tulip" style="width:100%">
+	  <div class="container">
+	  <p>红色郁金香</p>
+	  </div>
+	</div>
+	<br />
+
+	<h1>图像模态</h1>
+
+	<p>在此例中，我们使用 CSS 创建默认情况下隐藏的模式（对话框）。</p>
+	<p>我们使用 JavaScript 触发模态，并在单击模态时在模态内显示当前图像。还请注意，我们将图像的“alt”属性中的值用作模态内的图像标题文本。</p>
+	<p>如果您无法立即理解代码，请不要担心。学习完 CSS 后，请转到我们的 JavaScript 教程学习更多相关知识。</p>
+
+	<img id="myImg" src="tiyugongyuan.jpeg" alt="绿茵场" style="width: 50%;">
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+	  <span class="close">×</span>
+	  <img class="modal-content" id="img01">
+	  <div id="caption"></div>
+	</div>
+
+	<script>
+	// Get the modal
+	var modal = document.getElementById('myModal');
+
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = document.getElementById('myImg');
+	var modalImg = document.getElementById("img01");
+	var captionText = document.getElementById("caption");
+	img.onclick = function(){
+	  modal.style.display = "block";
+	  modalImg.src = this.src;
+	  captionText.innerHTML = this.alt;
+	}
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() { 
+	  modal.style.display = "none";
+	}
+	</script>
+</body>
+</html>

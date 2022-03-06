@@ -1,0 +1,124 @@
+div.tran1 {
+	width: 300px;
+	height: 100px;
+	background-color: yellow;
+	border: 1px solid black;
+	-ms-transform: translate(50px,100px);
+	transform: translate(50px,100px);
+}
+
+div.tran2 {
+	transform: rotate(-20deg);
+}
+
+div.tran3 {
+	transform: scale(2,3);
+}
+
+div.tran4 {
+	transform: scaleX(2);
+}
+
+div.tran5 {
+	width: 300px;
+	height: 100px;
+	background-color: yellow;
+	border: 1px solid black;
+}
+
+div.tran6 {
+	width: 300px;
+	height: 100px;
+	background-color: yellow;
+	border: 1px solid black;
+	transform: skewX(20deg);
+}
+
+div.tran7 {
+	width: 300px;
+	height: 100px;
+	background-color: yellow;
+	border: 1px solid black;
+	transform: skew(20deg, 10deg);
+}
+
+div.tran8 {
+	width: 300px;
+	height: 100px;
+	background-color: yellow;
+	border: 1px solid black;
+}
+
+div.tran9 {
+	width: 300px;
+	height: 100px;
+	background-color: yellow;
+	border: 1px solid black;
+	transform: rotateX(150deg);
+}
+
+div.tran10 {
+	width: 300px;
+	height: 100px;
+	background-color: yellow;
+	border: 1px solid black;
+	transform: rotateY(150deg);
+}
+
+div.tran11 {
+	width: 300px;
+	height: 100px;
+	background-color: yellow;
+	border: 1px solid black;
+	transform: rotateZ(90deg);
+}
+
+div.tran12, div.tran13, div.tran14, div.tran15, div.tran16, div.tran17 {
+	width: 100px;
+	height: 100px;
+	background: red;
+	transition: width 2s, height 2s;
+}
+
+div.tran12:hover, div.tran13:hover, div.tran14:hover, div.tran15:hover, div.tran16:hover, div.tran17:hover {
+	width: 300px;
+	height: 300px;
+}
+
+div.tran12 {
+	transition-delay: 1s;
+}
+
+div.tran13 {
+	transition-timing-function: linear;
+}
+
+div.tran14 {
+	transition-timing-function: ease;
+}
+div.tran15 {
+	transition-timing-function: ease-in;
+}
+div.tran16 {
+	transition-timing-function: ease-out;
+}
+div.tran17 {
+	transition-timing-function: ease-in-out;
+}
+
+div.tran18 {
+	width: 100px;
+	height: 100px;
+	background: red;
+	transition: width 2s, height 2s, transform 2s;
+}
+
+div.tran18:hover {
+	width: 300px;
+	height: 300px;
+	transform: rotate(180deg);
+}
+
+
+
+

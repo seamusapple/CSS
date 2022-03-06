@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="17.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Button</title>
+	<script type="text/javascript">
+		var r = document.querySelector(':root');
+
+		function myFunction_get() {
+			var rs = getComputedStyle(r);
+			alert("The value of --blue is: " + rs.getPropertyValue('--blue'));
+		}
+
+		function myFunction_set() {
+			r.style.setProperty('--blue', 'lightblue');
+		}
+	</script>
+</head>
+<body>
+
+	<button class="button1">CSS 按钮</button>
+	<br />
+	<button class="button2">CSS 按钮</button>
+	<br />
+
+	<div class="btn-group">
+	  <button class="button">Button</button>
+	  <button class="button">Button</button>
+	  <button class="button">Button</button>
+	  <button class="button">Button</button>
+	</div>
+	<br />
+	<br />
+	<br />
+	<br />
+
+	<button class="animated" style="vertical-align: middle;"><span>请悬停在我上方</span></button>
+	<br />
+
+	<button class="animated1">请点击我</button>
+	<br />
+	<br />
+	<br />
+
+	<button class="animated2">请点击我</button>
+	<br />
+	<br />
+
+
+	<h1>简单分页</h1>
+
+	<div class="center">
+		<div class="pagination">
+	  <a href="#">«</a>
+	  <a href="#">1</a>
+	  <a href="#" class="active">2</a>
+	  <a href="#">3</a>
+	  <a href="#">4</a>
+	  <a href="#">5</a>
+	  <a href="#">6</a>
+	  <a href="#">»</a>
+	</div>
+	</div>
+	<br />
+	<br />
+
+	<h1>面包屑分页</h1>
+
+	<ul class="breadcrumb">
+	  <li><a href="#">Home</a></li>
+	  <li><a href="#">Pictures</a></li>
+	  <li><a href="#">Summer 15</a></li>
+	  <li>Italy</li>
+	</ul>
+	<br />
+	<br />
+	<br />
+
+	<div class="newspaper">
+		<h2>第一回 宴桃园豪杰三结义 斩黄巾英雄首立功</h2>
+		话说天下大势，分久必合，合久必分：周末七国分争，并入于秦；及秦灭之后，楚、汉分争，又并入于汉；汉朝自高祖斩白蛇而起义，一统天下，后来光武中兴，传至献帝，遂分为三国。推其致乱之由，殆始于桓、灵二帝。桓帝禁锢善类，崇信宦官。及桓帝崩，灵帝即位，大将军窦武、太傅陈蕃，共相辅佐；时有宦官曹节等弄权，窦武、陈蕃谋诛之，机事不密，反为所害，中涓自此愈横。建宁二年四月望日，帝御温德殿。方升座，殿角狂风骤起，只见一条大青蛇，从梁上飞将下来，蟠于椅上。帝惊倒，左右急救入宫，百官俱奔避。须臾，蛇不见了。忽然大雷大雨，加以冰雹，落到半夜方止，坏却房屋无数。建宁四年二月，洛阳地震；又海水泛溢，沿海居民，尽被大浪卷入海中。光和元年，雌鸡化雄。六月朔，黑气十馀丈，飞入温德殿中。秋七月，有虹现于玉堂，五原山岸，尽皆崩裂。种种不祥，非止一端。帝下诏问群臣以灾异之由，议郎蔡邕上疏，以为蜺堕鸡化，乃妇寺干政之所致，言颇切直。帝览奏叹息，因起更衣。曹节在后窃视，悉宣告左右；遂以他事陷邕于罪，放归田里。后张让、赵忠、封谞、段珪、曹节、侯览、蹇硕、程旷、夏恽、郭胜十人朋比为奸，号为“十常侍”。帝尊信张让，呼为“阿父”。朝政日非，以致天下人心思乱，盗贼蜂起。
+	</div>
+	<br />
+
+	<h1>resize 属性</h1>
+
+	<div class="resize">
+	  <p>只允许用户调整 div 元素的宽度。</p>
+	  <p>如需调整：请点击并拖动 div 元素的右下角。</p>
+	</div>
+	<br />
+	<br />
+
+	<h1>outline-offset 属性</h1>
+
+	<div class="ex1">这个 div 有 4 像素的红色实线轮廓，位于边框边缘外 15 像素处。</div>
+	<br>
+	<div class="ex2">这个 div 有 5 像素的蓝色虚线轮廓，位于边框边缘外 5 像素处。</div>
+	<br />
+	<br />
+
+	<h1>使用 var() 函数</h1>
+
+	<div class="container">
+	  <h2>Welcome to Shanghai!</h2>
+	  <p>Shanghai is one of the four direct-administered municipalities of the People's Republic of China.</p>
+	  <p>Shanghai is one of the four direct-administered municipalities of the People's Republic of China.</p>
+	  <p>当浏览器的宽度小于 450px 时，此 div 的字体大小为 25px。当其为 450px 或更宽时，请将 --fontsize 变量值设置为 50px。请调整浏览器窗口的大小来查看效果。</p>
+	  <p>
+	    <button class="varButton">Yes</button>
+	    <button class="varButton">No</button>
+	  </p>
+	</div>
+	<br />
+	<button type="button" onclick="myFunction_get()">使用 JavaScript 来获取 CSS 变量</button>
+	<button type="button" onclick="myFunction_set()">使用 JavaScript 来更改 CSS 变量</button>
+	<br />
+	<br />
+
+	<div class="div1">现在，两个 div 的尺寸是一样的！</div>
+	<br>
+	<div class="div2">Hello！</div>
+	<br />
+
+	<h1>响应式导航菜单</h1>
+	<p>请调整浏览器窗口的大小以查看效果：当屏幕小于 600 像素时，导航菜单将垂直显示，而不是水平显示。</p>
+
+	<div class="topnav">
+	  <a href="#">Link</a>
+	  <a href="#">Link</a>
+	  <a href="#">Link</a>
+	</div>
+	<br />
+
+	<h1>响应式四列布局</h1>
+	<p><b>请调整浏览器窗口的大小以查看响应效果。</b>在宽度小于或等于 992px 的屏幕上，列的大小将从四列调整为两列。在宽度为 600px 或更小的屏幕上，这些列将堆叠在一起，而不是彼此相邻。</p>
+
+	<div class="row">
+	  <div class="column" style="background-color:#aaa;">
+	    <h2>Column 1</h2>
+	    <p>Some text..</p>
+	  </div>
+	  
+	  <div class="column" style="background-color:#bbb;">
+	    <h2>Column 2</h2>
+	    <p>Some text..</p>
+	  </div>
+	  
+	  <div class="column" style="background-color:#ccc;">
+	    <h2>Column 3</h2>
+	    <p>Some text..</p>
+	  </div>
+	  
+	  <div class="column" style="background-color:#ddd;">
+	    <h2>Column 4</h2>
+	    <p>Some text..</p>
+	  </div>
+	</div>
+	<div class="example001">Example DIV.</div>
+</body>
+</html>
