@@ -1,0 +1,113 @@
+* {
+	/*
+	content-box: 是默认值。如果你设置一个元素的宽为100px，
+	那么这个元素的内容区会有100px 宽，
+	并且任何边框和内边距的宽度都会被增加到最后绘制出来的元素宽度中.
+	border-box 告诉浏览器: 你想要设置的边框和内边距的值是
+	包含在width内的。
+	也就是说，如果你将一个元素的width设为100px，
+	那么这100px会包含它的border和padding，
+	内容区的实际宽度是width减去(border + padding)的值。
+	大多数情况下，这使得我们更容易地设定一个元素的宽高。
+	*/
+	box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+/*[attr*=value] 表示带有以 attr 命名的属性，且属性值至少包含一个 value 值的元素。*/
+[class*="col-"] {
+	float: left;
+	padding: 15px;
+	width: 100%
+}
+
+html {
+	font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+	background-color: #9933CC;
+	color: #FFFFFF;
+	padding: 15px;
+}
+
+.menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu li {
+	background-color: #33B5E5;
+	padding: 8px;
+	color: #FFFFFF;
+	margin-bottom: 7px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+	background-color: #0099CC;
+}
+
+.aside {
+	background-color: #33B5E5;
+	padding: 15px;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 14px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+	background-color: #0099CC;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 12px;
+	padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+	width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+	/*针对平板电脑：*/
+	.col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+	/*针对桌面*/
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+}
